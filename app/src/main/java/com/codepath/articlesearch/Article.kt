@@ -32,7 +32,7 @@ data class Article(
     @SerialName("multimedia")
     val multimedia: List<MultiMedia>?
 ) : java.io.Serializable {
-    val mediaImageUrl = "https://image.tmdb.org/t/p/w500/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
+    val mediaImageUrl = "https://www.nytimes.com/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
 }
 
 @Keep
